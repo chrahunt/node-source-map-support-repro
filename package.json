@@ -1,0 +1,21 @@
+{
+  "name": "node-source-map-support-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && browserify --debug background.js -o dist/background.js && cpr manifest.json dist/manifest.json",
+    "clean": "rimraf dist/*"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "source-map-support": "^0.4.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "cpr": "^1.1.2",
+    "rimraf": "^2.5.3"
+  }
+}

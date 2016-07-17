@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "source-map-support-repro",
+  "version": "1.0.0",
+  "description": "Show extension stack issue.",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "storage"
+  ]
+}
